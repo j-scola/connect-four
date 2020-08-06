@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tan;
+  text-align: center;
+  margin: 0px;
+}
+
+header {
+  background-color: slategray;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 75px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px auto;
+}
+
+#turn {
+  font-size: 50px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 25px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: content-box;
+}
+
+#board {
+  line-height: 0px;
+  margin: auto;
+  width: fit-content;
+  border: 5px black solid;
+  background-color: yellow;
+  display: inline-block;
+}
+
+.block {
+  width: 70px;
+  height: 70px;
+  margin: 7px;
+  background-color: tan;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px gray solid;
+}
+
+#popup {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(111, 128, 144, 0.9);
+  border-radius: 20px;
+  border: 5px white groove;
+  display: none;
+}
+
+#score {
+  font-size: 35px;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#newGame,
+#startOver {
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+@keyframes redWins {
+  0% {
+    background: tan;
+  }
+  50% {
+    background: red;
+  }
+  100% {
+    background: tan;
+  }
+}
+
+@keyframes blackWins {
+  0% {
+    background: tan;
+  }
+  50% {
+    background: black;
+  }
+  100% {
+    background: tan;
+  }
+}
